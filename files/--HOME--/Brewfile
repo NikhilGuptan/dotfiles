@@ -72,31 +72,22 @@ brew 'jq'
 brew 'mole'
 brew 'moreutils'
 brew 'ncdu'
-brew 'opencode'
 brew 'pandoc'
+brew 'postgresql@14'
 brew 'prettyping'
 brew 'ripgrep'
-brew 'syncthing'
-brew 'tlrc'
+brew 'uv'
 
-cask 'aldente', postinstall: "\"#{setup_login_items_script}\" -a 'AlDente'" if ::OS::Mac::version < 26
 cask 'clocker', postinstall: "\"#{setup_login_items_script}\" -a 'Clocker'"
-cask 'drawio'
-cask 'firefox@nightly' #, greedy: true
-cask 'google-chrome@beta'
+cask 'cursor'
+cask 'firefox' #, greedy: true
+cask 'gcloud-cli'
+cask 'google-chrome'
 cask 'jordanbaird-ice@beta', postinstall: "\"#{setup_login_items_script}\" -a 'Ice'" if ::OS::Mac::version >= 14
-cask 'keepassxc@beta'
-cask 'keyclu' if is_arm
-cask 'ollama-app', restart_service: :changed
-cask 'onlyoffice'
-cask 'protonvpn'
-cask 'rancher' # if ::OS::Mac::version < 26
-cask 'sol', postinstall: "\"#{setup_login_items_script}\" -a 'Sol'"
 cask 'shortcat', postinstall: "\"#{setup_login_items_script}\" -a 'Shortcat'"
+cask 'sol', postinstall: "\"#{setup_login_items_script}\" -a 'Sol'"
 cask 'stats', postinstall: "\"#{setup_login_items_script}\" -a 'Stats'"
 cask 'visual-studio-code'
-cask 'zed@preview'
-cask 'zen@twilight'
 cask 'zoom'
 
 # brew 'mas'

@@ -145,6 +145,7 @@ com.apple.inputAnalytics.serverStats
 com.apple.inputmethod.ironwood
 com.apple.intents.intents-helper
 com.apple.internal.ck
+com.apple.iphonesimulator
 com.apple.ipTelephony
 com.apple.itunescloud
 com.apple.itunescloudd
